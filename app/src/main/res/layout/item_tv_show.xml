@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgThumb"
+            tools:src="@drawable/transformers_prime"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txTitle"
+                tools:text="Title Movies"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+
+            <TextView
+                android:id="@+id/txGenre"
+                tools:text="Genre Movies"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+
+            <TextView
+                android:id="@+id/txDuration"
+                tools:text="Rate Movies"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
